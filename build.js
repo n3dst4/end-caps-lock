@@ -2,7 +2,7 @@ var Metalsmith  = require('metalsmith');
 var markdown    = require('metalsmith-markdown');
 var layouts     = require('metalsmith-layouts');
 var permalinks  = require('metalsmith-permalinks');
-
+var less        = require("metalsmith-less")
 Metalsmith(__dirname)
   .metadata({
     title: "My Static Site & Blog",
@@ -14,6 +14,7 @@ Metalsmith(__dirname)
   .destination('./docs')
   .clean(false)
   .use(markdown())
+  .use(less())
   .use(permalinks())
   .use(layouts({
     engine: 'handlebars'
