@@ -1,0 +1,26 @@
+{
+  "name": "end-caps-lock",
+  "version": "1.0.0",
+  "description": "Making it easy to disable Caps Lock since 2016",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n3dst4/end-caps-lock.git"
+  },
+  "author": "Neil de Carteret <git@lumphammer.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n3dst4/end-caps-lock/issues"
+  },
+  "homepage": "https://github.com/n3dst4/end-caps-lock#readme",
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "metalsmith": "^2.2.0",
+    "metalsmith-layouts": "^1.6.5",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-permalinks": "^0.5.0"
+  }
+}
