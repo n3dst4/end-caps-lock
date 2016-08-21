@@ -1,6 +1,18 @@
 @import "https://fonts.googleapis.com/css?family=Bungee";
-div.foo {
-  color: red;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bungee', cursive;
+  color: #0d3c4f;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 html {
   display: flex;
@@ -9,33 +21,37 @@ html {
   background-color: white;
 }
 body {
-  flex-basis: 60em;
-  padding: 1em;
+  flex-basis: 90em;
+  color: #333;
+}
+code {
+  background-color: #666;
+  color: #eee;
+  padding: 0 0.5em;
 }
 .intro {
   line-height: 2.5;
+  max-width: 60em;
+  margin: 3em auto;
 }
 .caps-lock-key {
   font-size: 0.8em;
   border: 0.5em outset #ddd;
   border-radius: 0.5em;
-  padding: 0.5em;
+  padding: 0.3em 0.6em;
   font-style: italic;
   background-color: #eee;
   vertical-align: baseline;
 }
 header {
-  font-family: 'Bungee', cursive;
   text-align: center;
   margin: 4em 0;
   padding: 0;
-  color: #345;
 }
 header h1 {
   margin: 0;
   padding: 0;
   line-height: 1.3;
-  transition: font-size 0.5s ease-in-out;
 }
 @media (max-width: 39rem) {
   header h1 {
@@ -51,4 +67,68 @@ header h1 {
   header h1 {
     font-size: 10rem;
   }
+}
+@media (min-width: 60rem) {
+  .advice-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .advice-container > * {
+    flex-grow: 1;
+    flex-basis: 30%;
+    min-width: 17em;
+  }
+  .advice-container > *:first-child {
+    margin-left: 1em;
+  }
+  .advice-container > *:last-child {
+    margin-right: 1em;
+  }
+}
+.advice-container .macos {
+  background-color: #eee;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 0 0.5em;
+}
+.advice-container .linux {
+  background-color: #eee;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 0 0.5em;
+}
+.advice-container .windows {
+  background-color: #eee;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 0 0.5em;
+}
+.contact {
+  position: absolute;
+  top: 7em;
+  right: 7em;
+  width: 15em;
+  padding: 0.5em 5em;
+  text-align: center;
+  transform: translate(50%, -50%) rotate(45deg);
+  background-color: #444;
+  color: #eee;
+  font-size: 0.9em;
+}
+.contact a {
+  color: skyblue;
+}
+.contact a.main {
+  font-weight: bold;
+}
+footer.site-footer {
+  text-align: center;
+  margin-top: 6em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-size: 0.9em;
+  border-top: 1px solid #999;
+}
+footer.site-footer a {
+  color: #229fd1;
 }

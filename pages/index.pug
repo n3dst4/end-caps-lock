@@ -17,14 +17,60 @@ block body
     | YOu realise your mistake. We're not all touch-typists. Most of us are
     | looking at the keyboard when we type.
 
-    p.intro Here's how to disable the
-      span.caps-lock-key Caps Lock
-      | on desktop operating systems:
+  p.intro Here's how to disable the accursed
+    =" "
+    span.caps-lock-key Caps Lock
+    =" "
+    | key on desktop operating systems:
 
-    div.advice-container
-      div.macos
-        | macos advice
-      div.linux
-        | linux advice
-      div.windows
-        | windows advice
+  div.advice-container
+    div.macos
+      h2 Mac
+      p You can disable the caps lock key easily enough for your user account through System Settings:
+      ol
+        li
+    div.linux
+      h2 Linux
+      p You need to add a startup command (Run every time the computer boots) that will disable the caps lock key in the keyboard map.
+      ol
+        li.
+          Search for #[code Startup Applications] in the dash and open it.
+        li.
+          Click #[b.action Add].
+        li For the #[b name] put
+          div #[code Disable Caps Lock]
+        li Under #[b command] put
+          div #[code setxkbmap -option caps:none]
+        li Press save.
+        li Restart your computer to check that it's worked.
+      p
+        | Credit:&nbsp;
+        a(href="http://askubuntu.com/a/574246") Ask Ubuntu
+    div.windows
+      h2 Windows
+      p.
+        Obviously Windows, being the most popular consumer operating system in
+        the world, has made disabling the caps lock key as easy as clicking a
+        button in the control panel... hahaha, sorry, no, you're going to have
+        to apply a registry patch.
+      p.
+        Don't be alarmed though. It's pretty simple:
+      ol
+        li
+          a(href="disable_caps_lock.reg") Click here to download "disable_caps_lock.reg"
+        li.
+          Find the download (probably in your "Downloads" folder?) and #[b double-click it]
+        li.
+          Your computer may prompt you (something along the lines of
+          "Do you want to allow this app to make changes to your device?").
+        li.
+          Click #[b.action Yes].
+        li.
+          You will now see a prompt from Regedit, asking if you want to continue
+          importing the file.
+        li.
+          Click #[b.action Yes].
+        li Restart your computer to check that it's worked.
+      p
+        | Credit:&nbsp;
+        a(href="http://answers.microsoft.com/en-us/windows/forum/windows_7-desktop/disable-caps-lock-key/8083d4ee-721d-463f-aeda-630cd7f047c3") Microsoft Community
