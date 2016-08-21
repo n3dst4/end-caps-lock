@@ -101,6 +101,29 @@ h2 {
   border-radius: 2em;
 }
 
+.quick-links {
+  .intro;
+  display: block;
+  ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    &::before {
+      content: "Jump to your operating system: "
+    }
+    font-size: 1.4em;
+  }
+  li {
+    white-space: nowrap;
+    display: inline-block;
+    padding: 0 2em;
+  }
+  @media (min-width: 60rem) {
+    display: none;
+  }
+}
+
 .advice-container {
   @media (min-width: 60rem) {
     display: flex;
@@ -124,13 +147,13 @@ h2 {
     padding: 1em;
     margin: 0 0.5em 1em;
   }
-  .macos {
+  #macos {
     .os()
   }
-  .linux {
+  #linux {
     .os()
   }
-  .windows {
+  #windows {
     .os()
 
   }

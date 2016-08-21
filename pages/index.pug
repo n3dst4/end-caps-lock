@@ -20,8 +20,17 @@ block body
     =" "
     | key on desktop operating systems:
 
+  .quick-links
+    ul
+      li
+        a(href="#macos") OS X / Mac OS
+      li
+        a(href="#linux") Ubuntu Linux
+      li
+        a(href="#windows") Windows
+
   div.advice-container
-    div.macos
+    div#macos
       h2 Mac
       p You can disable the caps lock key easily enough for your user account through System Settings:
       ol
@@ -39,7 +48,7 @@ block body
       p
         | Credit:&nbsp;
         a(href="http://www.cultofmac.com/246792/stop-yelling-turn-off-the-caps-lock-key-on-your-mac-os-x-tips/") Cult of Mac
-    div.linux
+    div#linux
       h2 Linux
       p You need to add a startup command (Run every time the computer boots) that will disable the caps lock key in the keyboard map.
       ol
@@ -59,7 +68,7 @@ block body
       p
         | Credit:&nbsp;
         a(href="http://askubuntu.com/a/574246") Ask Ubuntu
-    div.windows
+    div#windows
       h2 Windows
       p.
         Obviously Windows, being the most popular consumer operating system in
