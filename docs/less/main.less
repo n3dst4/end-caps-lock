@@ -116,7 +116,7 @@ h2 {
     background-color: #eee;
     border-radius: 1em;
     padding: 1em;
-    margin: 0 0.5em;
+    margin: 0 0.5em 1em;
   }
   .macos {
     .os()
@@ -132,15 +132,24 @@ h2 {
 
 .contact {
   position: absolute;
-  top: 7em;
-  right: 7em;
-  width: 15em;
-  padding: 0.5em 5em;
-  text-align: center;
-  transform: translate(50%, -50%) rotate(45deg);
   background-color: @alt-background;
   color: #eee;
   font-size: 0.9em;
+  text-align: center;
+  @media (min-width: 50rem) {
+    top: 7em;
+    right: 7em;
+    width: 15em;
+    padding: 0.5em 5em;
+    transform: translate(50%, -50%) rotate(45deg);
+  }
+  @media (max-width: 50rem) {
+    padding: 0.3em 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
   a {
     color: @alt-accent;
     &.main {
