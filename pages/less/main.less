@@ -13,9 +13,14 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
+  color: @accent;
   &:hover {
     text-decoration: underline;
   }
+}
+
+li {
+  padding: 0.5em 0;
 }
 
 html {
@@ -27,8 +32,9 @@ html {
 
 body {
   font-family: 'raleway', sans-serif;
+  text-align: justify;
   flex-basis: 90em;
-  //padding: 1em;
+  padding: 0em 1em;
   color: #333;
   //background: #ffe;
 }
@@ -167,7 +173,4 @@ footer.site-footer {
   font-size: 0.9em;
   //opacity: 0.5;
   border-top: 1px solid #999;
-  a {
-    color: @accent;
-  }
 }

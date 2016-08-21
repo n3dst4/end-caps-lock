@@ -10,9 +10,13 @@ h6 {
 }
 a {
   text-decoration: none;
+  color: #229fd1;
 }
 a:hover {
   text-decoration: underline;
+}
+li {
+  padding: 0.5em 0;
 }
 html {
   display: flex;
@@ -22,7 +26,9 @@ html {
 }
 body {
   font-family: 'raleway', sans-serif;
+  text-align: justify;
   flex-basis: 90em;
+  padding: 0em 1em;
   color: #333;
 }
 code {
@@ -141,7 +147,4 @@ footer.site-footer {
   padding-bottom: 2em;
   font-size: 0.9em;
   border-top: 1px solid #999;
-}
-footer.site-footer a {
-  color: #229fd1;
 }
