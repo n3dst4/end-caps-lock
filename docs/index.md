@@ -1,8 +1,6 @@
----
-layout: layout.html
----
 
-<h2>Read what I have to say</h2>
+
+<h2>Read what I have to says</h2>
 
 <a href="/posts/first-post/">First post</a>
 

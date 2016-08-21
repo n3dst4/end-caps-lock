@@ -1,6 +1,12 @@
 div.foo {
   color: red;
 }
+html {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 body {
   background-color: lightgoldenrodyellow;
+  max-width: 40em;
 }

@@ -1,8 +1,12 @@
 var Metalsmith  = require('metalsmith');
-var markdown    = require('metalsmith-markdown');
-var layouts     = require('metalsmith-layouts');
+//var markdown    = require('metalsmith-markdown');
+var pug     = require('metalsmith-pug');
 var permalinks  = require('metalsmith-permalinks');
 var less        = require("metalsmith-less")
+var watch = require('metalsmith-watch');
+var serve = require('metalsmith-serve');
+
+
 Metalsmith(__dirname)
   .metadata({
     title: "My Static Site & Blog",
@@ -10,15 +14,27 @@ Metalsmith(__dirname)
     generator: "Metalsmith",
     url: "http://www.metalsmith.io/"
   })
-  .source('./src')
+  .source('./pages')
   .destination('./docs')
   .clean(false)
-  .use(markdown())
+  //.use(markdown())
   .use(less())
   .use(permalinks())
-  .use(layouts({
-    engine: 'handlebars'
+  .use(pug({
+    locals: {
+
+    },
   }))
+  .use(
+    watch({
+      paths: {
+        "${source}/**/*": "**/*",
+        "${source}/../templates/**/*": "**/*",
+      },
+      livereload: true,
+    })
+  )
+  .use(serve())
   .build(function(err, files) {
     if (err) { throw err; }
   });
