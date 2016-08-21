@@ -34,7 +34,9 @@ Metalsmith(__dirname)
       livereload: true,
     })
   )
-  .use(serve())
+  .use(serve({
+    host: "0.0.0.0"
+  }))
   .build(function(err, files) {
     if (err) { throw err; }
   });
