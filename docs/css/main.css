@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Bungee";
+@import "https://fonts.googleapis.com/css?family=Bungee|Raleway";
 h1,
 h2,
 h3,
@@ -21,6 +21,7 @@ html {
   background-color: white;
 }
 body {
+  font-family: 'raleway', sans-serif;
   flex-basis: 90em;
   color: #333;
 }

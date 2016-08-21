@@ -28,7 +28,20 @@ block body
       h2 Mac
       p You can disable the caps lock key easily enough for your user account through System Settings:
       ol
-        li
+        li Open the Apple menu (the Apple icon at the left end of the menu bar)
+        li Click #[b System Preferences]
+        li In the system preferences panel, click #[b Keyboard]
+        li In the keyboard preferences panel, go to the #[b Keyboard] tab
+        li Click #[b Modifier Keys]
+        li In the modifier keys panel, change the action for Caps Lock - set it to No Action to sompletely disable it.
+      p This will take effect immediately - try it out!
+      p Note this this only applies to your own account, so it will not have any effect on the login screen.
+      p.
+        To #[b re-enable caps lock], follow the same instruction as above, but
+        in step 6, set the action for Caps Lock back to "Caps Lock".
+      p
+        | Credit:&nbsp;
+        a(href="http://www.cultofmac.com/246792/stop-yelling-turn-off-the-caps-lock-key-on-your-mac-os-x-tips/") Cult of Mac
     div.linux
       h2 Linux
       p You need to add a startup command (Run every time the computer boots) that will disable the caps lock key in the keyboard map.
@@ -43,6 +56,9 @@ block body
           div #[code setxkbmap -option caps:none]
         li Press save.
         li Restart your computer to check that it's worked.
+      p.
+        To #[b re-enable caps lock], follow the same instruction, but
+        #[b.action Delete] the entry you created.
       p
         | Credit:&nbsp;
         a(href="http://askubuntu.com/a/574246") Ask Ubuntu
@@ -71,6 +87,12 @@ block body
         li.
           Click #[b.action Yes].
         li Restart your computer to check that it's worked.
+      p To #[b re-enable caps lock]:
+      ol
+        li
+          a(href="enable_caps_lock.reg") Click here to download "enable_caps_lock.reg"
+        li Follow the instructions above from step 2 onwards.
+
       p
         | Credit:&nbsp;
         a(href="http://answers.microsoft.com/en-us/windows/forum/windows_7-desktop/disable-caps-lock-key/8083d4ee-721d-463f-aeda-630cd7f047c3") Microsoft Community
