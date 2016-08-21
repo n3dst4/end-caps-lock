@@ -17,7 +17,6 @@ Metalsmith(__dirname)
   .source('./pages')
   .destination('./docs')
   .clean(false)
-  //.use(markdown())
   .use(less())
   .use(permalinks())
   .use(pug({

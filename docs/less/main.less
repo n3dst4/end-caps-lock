@@ -1,13 +1,15 @@
 @import (css) "https://fonts.googleapis.com/css?family=Bungee|Raleway";
 
+// color declarations
+@text-color: #333;
 @accent: #229fd1;
 @background: white;
 @alt-background: #444;
 @alt-accent: skyblue;
 
-
+// generic elements
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Bungee', cursive;
+  font-family: 'Bungee', sans-serif;
   color: #0d3c4f;
 }
 
@@ -23,6 +25,13 @@ li {
   padding: 0.5em 0;
 }
 
+code {
+  background-color: #666;
+  color: #eee;
+  padding: 0 0.5em;
+}
+
+// page setup
 html {
   display: flex;
   flex-direction:row;
@@ -35,14 +44,7 @@ body {
   text-align: justify;
   flex-basis: 90em;
   padding: 0em 1em;
-  color: #333;
-  //background: #ffe;
-}
-
-code {
-  background-color: #666;
-  color: #eee;
-  padding: 0 0.5em;
+  color: @text-color;
 }
 
 .intro {
@@ -69,31 +71,18 @@ header {
     margin: 0;
     padding: 0;
     line-height: 1.3;
-    //transition: font-size 0.2s ease-in-out;
     @media (max-width: 39rem) {
       font-size: 4rem;
-      // &::before {
-      //   content: "S";
-      // }
     }
     @media (min-width: 40rem) {
       font-size: 6rem;
-      // &::before {
-      //   content: "M";
-      // }
-      //background-color: orange;
     }
     @media (min-width: 60rem) {
       font-size: 10rem;
-      // &::before {
-      //   content: "L";
-      // }
-      //background-color: red;
     }
+    text-shadow: 0 0 1em white;
   }
-}
-
-h2 {
+  border-bottom: 1px solid @alt-accent;
 }
 
 .os () {
@@ -150,7 +139,7 @@ h2 {
   #macos {
     .os()
   }
-  #linux {
+  #ubuntu {
     .os()
   }
   #windows {
@@ -195,5 +184,5 @@ footer.site-footer {
   padding-bottom: 2em;
   font-size: 0.9em;
   //opacity: 0.5;
-  border-top: 1px solid #999;
+  border-top: 1px solid @alt-accent;
 }
