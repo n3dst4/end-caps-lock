@@ -138,6 +138,9 @@ header {
     border-radius: 1em;
     padding: 1em;
     margin: 0 0.5em 1em;
+    h2 {
+      margin-top: 0;
+    }
   }
   #macos {
     .os()
@@ -148,6 +151,14 @@ header {
   #windows {
     .os()
 
+  }
+
+  a.back-to-top {
+    font-size: 0.9em;
+    display: block;
+    @media (min-width: 60rem) {
+      display: none;
+    }
   }
 }
 

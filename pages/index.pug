@@ -1,7 +1,7 @@
 extends ../templates/html.pug
 
 block body
-  header
+  header#top
     h1
       |End Caps
       br
@@ -31,6 +31,7 @@ block body
 
   div.advice-container
     div#macos
+      a.back-to-top(href="#top") Back to top
       h2 Mac
       p You can disable the caps lock key easily enough for your user account through System Settings:
       ol
@@ -49,6 +50,7 @@ block body
         | Credit:&nbsp;
         a(href="http://www.cultofmac.com/246792/stop-yelling-turn-off-the-caps-lock-key-on-your-mac-os-x-tips/") Cult of Mac
     div#ubuntu
+      a.back-to-top(href="#top") Back to top
       h2 Ubuntu
       p You need to add a startup command (Run every time the computer boots) that will disable the caps lock key in the keyboard map.
       ol
@@ -69,6 +71,7 @@ block body
         | Credit:&nbsp;
         a(href="http://askubuntu.com/a/574246") Ask Ubuntu
     div#windows
+      a.back-to-top(href="#top") Back to top
       h2 Windows
       p.
         Obviously Windows, being the most popular consumer operating system in

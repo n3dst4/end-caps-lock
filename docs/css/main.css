@@ -129,6 +129,9 @@ header h1 {
   padding: 1em;
   margin: 0 0.5em 1em;
 }
+.advice-container #macos h2 {
+  margin-top: 0;
+}
 .advice-container #ubuntu {
   background-color: #faf5f3;
   border-color: #edd7ce;
@@ -138,6 +141,9 @@ header h1 {
   padding: 1em;
   margin: 0 0.5em 1em;
 }
+.advice-container #ubuntu h2 {
+  margin-top: 0;
+}
 .advice-container #windows {
   background-color: #faf5f3;
   border-color: #edd7ce;
@@ -146,6 +152,18 @@ header h1 {
   border-radius: 1em;
   padding: 1em;
   margin: 0 0.5em 1em;
+}
+.advice-container #windows h2 {
+  margin-top: 0;
+}
+.advice-container a.back-to-top {
+  font-size: 0.9em;
+  display: block;
+}
+@media (min-width: 60rem) {
+  .advice-container a.back-to-top {
+    display: none;
+  }
 }
 .contact {
   position: absolute;
