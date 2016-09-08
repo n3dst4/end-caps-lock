@@ -1,4 +1,4 @@
-# end-caps-lock
+# http://endcapslock.org/
 
 Making it easy to disable Caps Lock since 2016. This is the source code for the website [End Caps Lock][site]
 
