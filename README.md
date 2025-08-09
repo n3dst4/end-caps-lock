@@ -11,8 +11,8 @@ To work on the website
 
 1. Clone this repository
 2. `cd` into it
-3. Run `npm install`
-4. Run `npm start`
+3. Run `pnpm install`
+4. Run `pnpm start`
 
 This will build the site and start a local dev server on port 8080. Change what you will, save, commit, push.
 
