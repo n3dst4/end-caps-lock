@@ -30,7 +30,7 @@ block body
         a(href="#windows") Windows
 
   div.advice-container
-    div#macos
+    div.os
       a.back-to-top(href="#top") Back to top
       h2 Mac
       p You can disable the caps lock key easily enough for your user account through System Settings:
@@ -49,9 +49,9 @@ block body
       p
         | Credit:&nbsp;
         a(href="http://www.cultofmac.com/246792/stop-yelling-turn-off-the-caps-lock-key-on-your-mac-os-x-tips/") Cult of Mac
-    div#ubuntu
+    div.os
       a.back-to-top(href="#top") Back to top
-      h2 Ubuntu
+      h2 Ubuntu Linux
       p You need to add a startup command (Run every time the computer boots) that will disable the caps lock key in the keyboard map.
       ol
         li.
@@ -70,7 +70,31 @@ block body
       p
         | Credit:&nbsp;
         a(href="http://askubuntu.com/a/574246") Ask Ubuntu
-    div#windows
+    div.os
+      a.back-to-top(href="#top") Back to top
+      h2 Linux Mint
+      p.
+        Mint's caps lock behaviour can be configured through the
+        Keyboard app.
+      ol
+        li.
+          Open the main menu and search for #[code Keyboard]. Open the #[b Keyboard] app.
+        li.
+          Click #[b Layouts] at the top.
+        li.
+          Click #[b Options] near the bottom.
+        li.
+          Open #[b Caps lock behaviour].
+        li.
+          Choose the behaviour you want &mdash; #[b "Caps Lock is disabled"] is the
+          obvious choice but there are several options available.
+      p.
+        To #[b re-enable caps lock], follow the same instruction, but pick
+        #[b "Default"] in the last step.
+      p
+        | Credit:&nbsp;
+        a(href="https://forums.linuxmint.com/viewtopic.php?t=389205") Linux Mint Forumsm
+    div.os
       a.back-to-top(href="#top") Back to top
       h2 Windows
       p.

@@ -108,10 +108,11 @@ header h1 {
   .advice-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .advice-container > * {
     flex-grow: 1;
-    flex-basis: 30%;
+    flex-basis: 45%;
     min-width: 17em;
   }
   .advice-container > *:first-child {
@@ -121,7 +122,7 @@ header h1 {
     margin-right: 1em;
   }
 }
-.advice-container #macos {
+.advice-container .os {
   background-color: #faf5f3;
   border-color: #edd7ce;
   border-style: solid;
@@ -130,31 +131,7 @@ header h1 {
   padding: 1em;
   margin: 0 0.5em 1em;
 }
-.advice-container #macos h2 {
-  margin-top: 0;
-}
-.advice-container #ubuntu {
-  background-color: #faf5f3;
-  border-color: #edd7ce;
-  border-style: solid;
-  border-width: 4px 0;
-  border-radius: 1em;
-  padding: 1em;
-  margin: 0 0.5em 1em;
-}
-.advice-container #ubuntu h2 {
-  margin-top: 0;
-}
-.advice-container #windows {
-  background-color: #faf5f3;
-  border-color: #edd7ce;
-  border-style: solid;
-  border-width: 4px 0;
-  border-radius: 1em;
-  padding: 1em;
-  margin: 0 0.5em 1em;
-}
-.advice-container #windows h2 {
+.advice-container .os h2 {
   margin-top: 0;
 }
 .advice-container a.back-to-top {
